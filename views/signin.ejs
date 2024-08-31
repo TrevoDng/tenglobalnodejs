@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/public/stylesheets/signin.css">
+  
+    <script src="/public/javascripts/login.js" type="module" async></script>
+
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+
+    <div class="main-login-container">
+    <h1>Login Page</h1>
+    <div class="wrapper">
+      <form class="login" id="login-form">
+        <div class="error" style="color: blueviolet;"></div>
+        <br />
+        <label for="email">Email</label><br />
+        <input type="text" id="email" placeholder="Email" required />
+        <i class="fa fa-user"></i><br />
+        <label for="password">Password</label><br />
+        <input type="password" id="password" placeholder="Password" required />
+        <i class="fa fa-key"></i><br />
+        
+        <div id="toggle-password-btn" style="text-align: center; margin: 0 1px 10px 0; ">
+          <a style="cursor: pointer;">
+            <span id="password-eye-text">view password</span>
+            <i id="password-eye" class="fa-solid fa-eye-slash"></i>
+        </a>
+        </div>
+        <div><a href="/resetpasswordemail" class="forgot-password">Forgot password?</a></div>
+        
+        <button type="submit" value="login">
+          <i class="spinner"></i>
+      <span class="state">Login</span>
+        </button><br />
+      </form>
+    <br />
+    <br />
+
+    <div>
+      <p></p>
+    </div>
+
+    <div class="signin-register-btn">
+      <a href="/signup">Don't have an accout? Register</a>
+    </div>
+    
+    <p id="userExists"></p>
+  </div>
+  
+</div>
+
+  <script>
+    
+  </script>
+    <script>
+
+        
+
+    </script>
+  </body>
+</html>

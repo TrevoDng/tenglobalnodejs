@@ -1,0 +1,55 @@
+.outer-register-form-container {
+  text-align: center;
+}
+
+.register-form-container {
+  text-align: center; /* Center the form horizontally */
+}
+
+.register-form-container form {
+  display: inline-block; /* Make the form an inline block */
+  border: 1px solid #2196F3;
+  border-radius: 10px;
+  padding: 20px; /* Add padding to create space between the border and the inside elements */
+  text-align: center; /* Center the form elements horizontally */
+}
+
+.register-form-container input {
+  margin-bottom: 0px;
+font-size: 11pt;
+padding: 5px 5px 5px;
+border: 1px solid #cecece;
+background-color: #efefef;
+color: #787575;
+border-radius: 5px;
+width: 60%;
+outline: none;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0  20px 0;
+}
+.login-redirect {
+  margin: 20px;
+  text-align: center;
+}
+
+#register-submit-btn {
+  font-size: 20px;
+  width: 100%;
+  color: #fff;
+  background-color: #2196F3;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.form-element {
+  position: relative;
+  /*background-color: rgba(195, 217, 228, 0.438);*/
+}
+
+#match-password-display {
+
+}

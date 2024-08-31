@@ -1,0 +1,57 @@
+body {
+    
+}
+
+ol {
+  position: relative;
+    list-style-type: none;
+    counter-reset: item;
+}
+
+ol li {
+  position: relative;
+  counter-increment: item;
+  padding: 10px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  margin: 5px;
+  margin-left: 15px;
+  color: gray;
+  cursor: pointer;
+}
+
+ol li:before {
+  left: -2.5em;
+  content: counter(item) " ";
+  color: blue !important;
+  border-color: blue !important;
+  font-weight: italic;
+  border-radius: 10%;
+  padding: 0.6em 0.6em;
+  background-color: #fff;
+  border: 1px solid blue;
+  position: absolute;
+  transform: translateY(-25%);
+}
+
+.items-users-list {
+  text-align: left;
+}
+
+.items-proof-list {
+  text-align: left;
+}
+
+.items-users-list:hover {
+  Background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.items-proof-list:hover {
+  Background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.fa-spin {
+  color: rgb(0, 195, 255);
+}

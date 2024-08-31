@@ -1,0 +1,55 @@
+.proof-form-container {
+    text-align: center;
+}
+
+.proof-form-inner-container {
+    display: inline-block;
+    background-color: brown;
+}
+
+.send-proof {
+    /*background-color: #05869d;*/
+    text-align: center;
+  }
+
+.proof-form-inner-container, input, textarea {
+    margin-bottom: 10px;
+    font-size: 11pt;
+    padding: 15px 10px 10px;
+    border: 1px solid #cecece;
+    background-color: #ffffff;
+    color: #787575;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  .proof-form-input:hover, textarea:hover {
+    border: 1px solid #148fc0;
+  }
+
+  .sendproof-info {
+    font-size: 0.8em;
+  }
+
+  .sendproof-info-list{
+    font-size: 0.7em;
+    color: darkolivegreen;
+  }
+
+  .sendproof-info-list li{
+    font-size: 0.8em;
+    color: darkolivegreen;
+  }
+
+/*
+@media screen and (min-width: 600px) {
+  .proof-form-container {
+    background-color: rgba(255, 255, 255, 0);
+    max-width: 300px;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(32, 218, 88);
+    border-radius: 10px;
+  }
+}
+  */

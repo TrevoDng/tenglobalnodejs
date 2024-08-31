@@ -1,0 +1,1 @@
+module.exports = {fileUpload: require("express-fileupload"),};

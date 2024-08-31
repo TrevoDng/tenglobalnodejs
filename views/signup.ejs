@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Register Page</title>
+    <!--<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase.js"></script>-->
+     <!--<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>--> 
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+    
+    
+    <link rel="stylesheet" href="/public/stylesheets/signup.css">
+
+     <script src="/public/javascripts/register.js" type="module" async></script>
+    <!-- <script src="/public/javascripts/firebase.js" type="module" async></script>--> 
+    <!--<script src="/public/javascripts/RegisterRef.js" type="module" async></script>
+    <script src="/firebase.js" type="module" async></script>-->
+  </head>
+  <body>
+    
+    <div class="outer-register-form-container">
+    <div class="register-form-container">
+
+    <h1 class="page-title">Register Page</h1>
+    <div class="error" style="background-color: red;"></div>
+      <!--method="POST" action="api/auth/signup"-->
+    <form class="form-element" id="register-form">
+      
+      <br />
+      <label for="username"></label><br />
+      <input type="text" id="username" placeholder="Name" autocomplete="off" autofill="off" required /><br />
+      <label for="surname"></label><br />
+      <input type="text" id="surname" placeholder="Surname" autocomplete="off" autofill="off" required /><br />
+      <label for="email"></label><br />
+      <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" autofill="off" required /><br />
+      <label for="password"></label><br />
+      <input type="password" id="password" name="password" placeholder="Password" required /><br />
+      <label for="match-password"></label><br />
+      <input type="password" id="match-password" name="password" placeholder="Confirm Password" required /><span id="match-password-display"></span> <br />
+      <label for="register-contact-number"></label><br />
+      <input type="tel" id="register-contact-number" name="contact_number" placeholder="Contact Number" autocomplete="off" autofill="off" required /><br />
+      <label for="country_name"></label><br />
+      <input type="text" id="country_name" name="country_name" placeholder="Country Name" autocomplete="off" autofill="off" required /><br />
+      <br />
+      <label for="file">profile Pic</label><br />
+      <input type="file" id="file" name="file" autocomplete="off" autofill="off" required /><br />
+      <br />
+      <input type="submit" value="Register" id="register-submit-btn"/><br />
+    </form>
+    <div class="login-redirect">
+      Already registered?
+      <a href="/signin"> Login</a>
+      <p id="userExists"></p>
+    </div>
+  </div>
+</div>
+    <script>
+    </script>
+  </body>
+</html>

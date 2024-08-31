@@ -1,0 +1,133 @@
+/*side nav*/
+
+@font-face {
+    font-family: 'GltpStarionRegular-rvv7p';
+    src: url('loxo-cufonfonts/GltpStarionRegular-rvv7p.otf') format('truetype');
+  }
+
+  body {
+    font-family: 'GltpStarionRegular-rvv7p', sans-serif;
+  }
+
+.sidebar-footer {
+    background-color: #000;
+  }
+  .sidebar-layout {
+  margin: 0;
+  padding: 0;
+  }
+  .sidebar-parent-div {
+  position: relative;
+  height: 100vmax;
+  /* width: 300px; */
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(5, 35, 70, 0.842), rgba(2, 63, 78, 0.5)), url("https://user-images.githubusercontent.com/25878302/144499035-2911184c-76d3-4611-86e7-bc4e8ff84ff5.jpg");
+  }
+  
+  .sidenavbar-list {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /*background-color: #000;*/
+  width: 100%;
+  }
+  .sidenavbar-list ul {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* background-color: brown; */
+  width: 100%;
+  white-space: nowrap;
+  }
+  .sidenavbar-list ul li{
+  display: block;
+  list-style: none;
+  text-decoration: none;
+  text-align: left;
+  
+  /*color: white;
+  font-weight: bold;
+  margin: 5px 0 10px 0;
+  */
+  /* width: 290px; */
+  padding: 10px 0 10px 10px;
+  }
+  
+  .sidenavbar-list ul li:hover {
+  text-align: left;
+  cursor: pointer;
+  background-color: #06567abd;
+  }
+  
+  .sidenavbar-list ul li a{
+  display: inline-block;
+  margin: 0;
+  /* width: 100%; */
+  text-decoration: none;
+  font-size: 1.0em;
+  color:lightgray;
+  cursor: pointer;
+  }
+  
+  .sidenavbar-list ul li i{
+  padding: 0 10px 0 0;
+  }
+  
+  .side-navbar {
+  /*background-color: black;*/ 
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* width: 300px; */
+  }
+  .side-navbar h1 {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 20px 0 20px;
+  }
+  
+  .sidebar-parent-div footer {
+  
+  display: block;
+  bottom: 0px;
+  padding: 20px;
+  background-color: rgba(1, 15, 20, 0.47);
+  border-bottom: 3px solid rgb(91, 91, 91);
+  /* width: 300px; */
+  }
+  
+  
+  .sidebar-parent-div footer svg {
+  color: white;
+  text-decoration: none;
+  fill: white;
+  /*margin: 0 10px 10px 10px;*/
+  }
+  
+  .sidebar-footer-profile {
+  
+  display: block;
+  
+  bottom: 0%;
+  left: 0;
+  color: white;
+  list-style: none;
+  
+  }
+  
+  .sidebar-parent-div footer li a{
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  }
+  
+  .sidebar-main-div {
+  /* width: 300px; */
+      margin: 0;
+      z-index: 2;
+  }
+  

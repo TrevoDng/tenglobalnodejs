@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- for sololearn images-->
+
+<link rel="stylesheet" href="/public/stylesheets/homestyle.css">
+<link rel="stylesheet" href="/public/stylesheets/style.css">
+<link rel="stylesheet" href="/public/stylesheets/sidenav.css">
+<link rel="stylesheet" href="/public/stylesheets/destinationBanks.css">
+<link rel="stylesheet" href="/public/stylesheets/serviceFeature.css">
+<link rel="stylesheet" href="/public/stylesheets/topnav.css">
+<link rel="stylesheet" href="/public/stylesheets/notification.css">
+<link rel="stylesheet" href="/public/stylesheets/editProfile.css">
+<link rel="stylesheet" href="/public/stylesheets/sendProof.css">
+
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!--
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.js"></script>
+<script src="/public/bundle.js"></script>
+-->
+<!--
+      UNPKG: <script src="https://unpkg.com/requirejs@2.3.6/require.js"></script>
+    jsDelivr: <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.js"></script>
+-->
+<!--<script src="https://www.gstatic.com/firebasejs/9.6.1/firebase.js"></script>-->
+     <!--<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>--> 
+     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-storage.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-database.js"></script>
+
+<script src="/public/javascripts/countrysearch/countrySearch.js" type="module" async></script>
+<script src="/public/javascripts/countrysearch/destinationSearch.js" async></script>
+
+
+<!--<script type="text/javascript" src="/public/javascripts/home.js"></script>-->
+<script type="text/javascript" src="/public/javascripts/tenglobaService.js" async></script>
+
+<script src="/public/javascripts/userAPI.js" type="module" async></script>
+<script src="/public/javascripts/userData.js" type="module" async></script>
+
+<script src="/public/javascripts/home.js" type="module" async></script>
+
+<script src="/public/javascripts/sendProof.js" type="module" async></script>
+<script src="/public/javascripts/getProofData.js" type="module" async></script>
+<script src="/public/javascripts/getProofAPI.js" type="module" async></script>
+
+<script src="/public/javascripts/getNotificationAPI.js" type="module" async></script>
+<script src="/public/javascripts/getNotificationData.js" type="module" async></script>
+<script src="/public/javascripts/notification.js" type="module" async></script>
+
+<script src="/public/javascripts/updateEmailAndContact.js" type="module" async></script>
+
+<style>
+</style>
+
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div style="color: lightblue; text-align: center; background-color: white; margin: 0; padding: 20px; display: none;">
+    <h3 style="color: lightBlue; text-align: center; background-color: white; margin: 0">AD here</h3>
+</div>
+
+  <div class="grid-container">
+    <div class="item1">
+<header>
+
+<div class="topnav" id="myTopnav">
+  <!--<div class="dropdown-content responsive">-->
+  <a class="company-name"><span style="color:#091011;
+     margin:0%;">
+      &nbsp TEN </span>
+      <span style="color:#06b3b3;">GLOBAL</span>
+      </a>
+  
+  <a href="#notification" class="menu-head nav-link" id="notification-btn" style="margin: 0%;"><i class="fa-regular fa-bell"></i>
+  <span class="notification-title" id="notification-count">0</span></a>
+  <a href="#contact" class="menu_head nav-link" href="#contact">Contact</a>
+
+  <a href="#about" class="menu-head nav-link">About</a>
+  <a class="menu-head nav-link" href="#profile">Profile</a>
+  <a class="menu-head" id="logout-btn"><i class="fa-solid fa-right-from-bracket"></i>
+    Logout</a>
+  
+<!--</div>-->
+<a href="javascript:void(0);" 
+  style="font-size:15px;border:none; border-radius: 5px 5px 5px 5px; margin:0" 
+  class="icon" id="dropdown-content" onclick="myFunction()">&#9776;</a>
+</div>
+</header>
+</div>
+
+    <!--Side Navigation-->
+<div class="item2" id=item2>
+
+  <div class='sidebar-main-div'>
+    
+    <div
+    id="sidebar-layout"
+    style="color: white; 
+    display: flex;
+    flex-direction: row;
+    position: relative";
+    class="sidebar-parent-div">
+
+
+ 
+    <nav class='side-navbar'>
+    <footer class='sidebar-footer'>
+    <li class='sidebar-footer-profile'>
+          
+              <span key={projects.userId}>
+              <img style="width:40px; height: 40px;  
+              border: 5px solid #f3f3f3;
+              border-radius: 40px;
+              border-top: 5px solid lightblue;
+              border-bottom: 5px solid gold;" 
+                src="https://firebasestorage.googleapis.com/v0/b/goshen-transport.appspot.com/o/gosheni%20new.jpg?alt=media&token=dd10c21c-00f6-461e-9333-1a327f771439"
+                               alt="img not foud"  
+                               class="read-course-img"
+                               id="profile_pic_id">
+              <p style="font-size: 12px; margin: 0; padding: 0;" id="username_id">{ project.username } </p>
+              </span>
+
+        </li>
+      </footer>
+      <h1 style="display: none;">Menu</h1>
+        <div class='sidenavbar-list'>
+          <ul style="list-style: none; color: white;">
+          <li><i class="fa-solid fa-house" style="color: #00d5ff; font-size: bold;"></i>
+              <a href="#main" class="nav-link"
+              >Home</a></li>
+              <li><i class="fa-regular fa-paper-plane" style="color: #00d5ff; font-weight: bold;"></i>
+                <a href="#sendproof" class="nav-link"
+                >Send Proof</a></li>
+              <li ><i class="fa-solid fa-money-check" style="color: #00d5ff; font-weight: bold;"></i>
+              <a href="#account" class="nav-link"
+              >Account</a></li>
+            <li><i class="fa-solid fa-file" style="color: #00d5ff; font-weight: bold;"></i>
+              <a href="#statement" class="nav-link"
+              >Statement</a></li>
+            <li><i class="fa-solid fa-clock-rotate-left" style="color: #00d5ff; font-weight: bold;"></i>
+              <a href="#history" class="nav-link"
+            >History</a></li>
+            <li><i class="fa-solid fa-money-check" style="color: #00d5ff; font-weight: bold;"></i>
+            <a href="#balance" class="nav-link"
+            >Balance</a>
+            </li>
+          </ul>
+        </div>
+        </nav>
+        
+          </div>
+        </div>
+      </div>
+      <div class="item3" id="item3">
+       <!-- <h1>This is a Main Page</h1>-->
+        <!--for loading effect-->
+        <div id="loading-animation" style="display: none;"></div>
+        <!--section-->
+        <section cols="3" class="main-service-section" data-page-id="main">
+          <div class="main_service_container" id="nav-container">
+            
+          </div>
+        </section>
+
+        <section class="service_section" data-page-id="sendproof">
+          <div class="send-proof">
+            <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button>
+          </div>
+        <!-- Form section start -->
+         <p>important! </p>
+         <p class="sendproof-info-list">if you need help regarding filling the form read information at the bottom</p>
+         <br />
+         <br />
+       <div class="proof-form-container">
+        <div class="proof-form-inner-container">
+            <h1><span>Send Proof</span></h1>
+            <form id="proof-form">
+              <div class="input-container">
+                <input name="country_name" id="country-input" type="text"
+                class="proof-form-input"
+                autocomplete="off" 
+                placeholder="click or type country name" required/><br/>
+                <div id="countries-list-container"></div>
+              </div>
+                <!--<ul id="proof-list"></ul>-->
+                <input name="amount" id="amount" type="number" 
+                class="proof-form-input"
+                placeholder="Amount" required/><br/>
+                
+                <div class="input-container">
+                <input name="destination" id="destination" type="text" 
+                class="proof-form-input"
+                autocomplete="off"
+                placeholder="place to withdraw" required/><br/>
+                <div id="banks-list-container"></div>
+              </div>
+
+                <textarea name="message" placeholder="Message"
+                id="message" 
+                class="proof-form-input"></textarea><br />
+                <input name="file" id="file" 
+                class="proof-form-input"
+                autocomplete="off" autofill="off"
+                type="file" placeholder="Choose file" required/><br/>
+                <input type="submit" value="SEND" class="submit" />
+            </form>
+            <p class="error-proof">error</p>
+        </div>
+        <!-- Form section end -->
+         </div>
+          </div>
+          <p>important</p>
+          <p class="sendproof-info" style="text-align: left;"> After you tranfer or made a deposit to our account follow these steps
+            <ol class="sendproof-info-list" style="text-align: left;">
+              <li>choose a country you're sending money to. and if is local choose <b>South Africa</b></li>
+              <li>you can choose a country from list or you can just type it</i>
+              <li>Enter an amount you wish to send</i>
+              <li>Choose a place the receiver will withdraw money from</i>
+              <li>Type any information you think is important</i>
+              <li>attatch a reciept or proof of deposit/tranfer</i>
+            </ol>
+           </p>
+        </section>
+
+
+        <!--Profile page-->
+        <section class="service_section" data-page-id="profile">
+          <div class="useraccount_container">
+            <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+            <h3 class="service-heading" style="margin: 50px;"><span>Profile Details</span></h3>
+            
+            <table
+              class="service-table" id="profile-table" style="width: auto;">
+              <tbody class="service-table-body" id="table-body-profile"></tbody>
+            </table>
+            <div id="profile-container">
+              <a class="nav-link" href="#editprofile">Edit profile details</a>
+            </div>
+          </div>
+        </section>
+
+        <!--Edit profile-->
+        <section class="service_section" data-page-id="editprofile">
+          <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+
+          <form  id="update-email-form">
+            <br />
+            <label for="edit-email">Email</label><br />
+            <input type="email" id="edit-email" name="email" required /><br />
+            <input type="submit" value="Save changes" id="update-email-submit-btn"/><br />
+          </form>
+          <p id="update-email-error">g</p>
+        
+          <form id="update-contact-form">
+            <label for="edit-contact-number">Contact Number</label><br />
+            <input type="number" id="edit-contact-number" name="contact_number" required /><br />
+            <input type="submit" value="Save changes" id="update-contact-submit-btn"/><br />
+          </form>
+          <p id="update-contact-error">g</p>
+        </section>
+
+        <section class="service_section" data-page-id="account">
+          <div class="goback_div">
+            <button class="goback"
+            data-target="main">Go back</button>
+          </div>
+          <div class="useraccount_container">  
+            <h4 class="service-heading" style="margin: 50px;"><span>Account details</span></h4>
+          
+              <table
+              class="service-table" id="account-table" style="width: auto;">
+      <tbody class="service-table-body" id="table-body-account">
+      </tbody>
+          </table>   
+         
+          </div>
+        </section> 
+
+        <section class="service_section" data-page-id="statement">
+          <div class="goback_div">
+            <button class="goback"
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">
+            <h3 class="service-heading"><span>Statement details</span></h3>
+              
+                <table
+                class="service-table" id="statement-table" style="width:auto; 
+              margin-top: 50px;">
+              <thead><tr id="statement-header-row"></tr></thead>
+      <tbody class="service-table-body" id="table-body-statement">
+      </tbody>
+          </table>   
+          </div>
+        </section>
+
+        <section class="service_section" data-page-id="history">
+          <div class="goback_div">
+            <button class="goback"
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">
+            <h3 class="service-heading"><span>History details</span></h3>
+          
+            <table
+            class="service-table" id="history-table" style="width:auto; 
+            margin-top: 50px;">
+            <thead><tr id="history-header-row"></tr></thead>
+    <tbody class="service-table-body" id="table-body-history">
+    </tbody>
+        </table>
+         
+          </div>
+        </section>
+
+        <section class="service_section" data-page-id="balance">
+          <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">
+            <h3 class="service-heading"><span>Ballance details</span></h3>
+          
+            <table
+            class="service-table" id="balance-table" style="width:auto; 
+            margin-top: 50px;">
+    <tbody class="service-table-body" id="table-body-balance">
+    </tbody>
+        </table>
+          </div>
+        </section>
+
+        <!--Notification page-->
+        <section class="service_section" data-page-id="notification">
+          <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">
+            <h3 class="service-heading"><span>Notification</span></h3>
+            <div style="margin: 40px;" id="notification-container"></div>
+          </div>
+        </section>
+
+        <!--Contact us-->
+        <section class="service_section" data-page-id="contact">
+          <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">
+            <h3 class="service-heading"><span>Contact us</span></h3>
+            <p>Phone number: 0665750985</p>
+            <p>Email: tenglobal@info.co.za</p>
+          </div>
+        </section>
+
+        <!--About us page-->
+        <section class="service_section" data-page-id="about">
+          <div class="goback-div">
+            <button class="goback" 
+            data-target="main">Go back</button></div>
+          <div class="useraccount_container">  
+            <h3 class="service-heading" id="contact-service-heading"><span>About us</span></h3>
+            <p></p>
+            <div>
+              <h3> How to register</h3>
+  <ul class="about-system-usage">
+  <li>Press register button to register in few minutes</li>
+  <li>Email and Cell number is required</li>
+  <li>after registration you receive sms to verify the account</li>
+  <li>It only takes few minutes
+  for money to
+  reach the destination.</li>
+  <li> after sending money it
+  takes few minutes
+  before money sent so that
+  a clinet can make
+  changes if there is
+  a mistake</li>
+  <li> when the process complete
+  the client receive an
+  sms contains details for
+  cash withdrawals.</li>
+  </ul>
+  
+  <hr></hr>
+  
+  <p class="about-system-usage">
+
+  <span> a client will be required
+    to provide an image for registration.
+    </span><br /><br />
+  <span> clients can edit their
+  profiles including(contact number
+  and emails).</span>
+  </p>
+  <hr></hr>
+  <p>ANDROID APP is comming soon!</p>
+          </div>
+
+          </div>
+        </section>
+
+  <section class="quote">
+    <blockquote class="container">
+      <p>"Some great quote!"</p>
+      <cite>
+        Satisfied Customer 
+      </cite>
+    </blockquote>
+  </section>
+
+   <button 
+  class="side-menu-btn"
+style="height: 20px; 
+border:1px solid gray;
+border-radius: 2px;
+margin: 10px;">open & close side menu</button>
+</div>
+        <!--item3 end-->
+<div class="item4"></div>
+<div class="item5">Footer</div>
+</div>
+  
+  <footer>
+   <div class="container">
+    <ul>
+      <li><a href="#main" class="menu_head nav-link">Home</a></li>
+      <li><a href="#about" class="menu_head nav-link">About</a></li>
+      <li>
+        <a href="#contact" class="menu_head nav-link">Contacts</a>
+      </li>
+    </ul>
+    <p>&copy; All rights reserved.</p>
+   </div>
+  </footer>
+  
+  <script>
+      //top nav
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+    var dropdownContent = document.getElementById("dropdown-content");
+  dropdownContent.classList.add("responsive");
+  }
+  /*
+    var coll = document.getElementsByClassName('dropbtn');
+  
+  var i;
+  for(i = 0; i < coll.length; i++) {
+      coll[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+          var content = this.nextElementSibling;
+          
+  if(content.style.maxHeight) {
+      content.style.maxHeight = null;
+  }
+  else {
+      content.style.maxHeight = content.scrollHeight+"px";
+  }
+      });
+  }
+      */
+  //tobar end
+  </script>
+  
+  <script>
+
+    const sideBtn = document.getElementsByClassName("side-menu-btn");
+    
+    let j;
+for (j=0; j < sideBtn.length; j++) {
+        sideBtn[j].addEventListener('click', function() {
+        
+        const sideMenu = document.getElementById("item2");
+        /*sideMenu.classList.toggle('active');*/
+        
+        if (sideMenu.style.display === "block") {
+sideMenu.style.display = "none";
+//sideBtn[0].style.width = "0px";
+} else {
+sideMenu.style.display = "block";
+//sideBtn[0].style.width = "160px";
+}
+        
+        /*
+        if(sideMenu.style.display) {
+            sideMenu.style.display = null
+            sideBtn[0].style.width = 160+"px"
+        } else {
+            sideMenu.style.display ="block"
+            sideBtn[0].style.width = 160+"px"
+        }
+        */
+  })
+}
+    
+    
+</script>
+<script>
+  
+</script>
+
+
+
+</body>
+</html>

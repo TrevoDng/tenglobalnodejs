@@ -1,0 +1,41 @@
+.edit-form-container {
+  text-align: center; /* Center the form horizontally */
+}
+
+.edit-form-container form {
+  display: inline-block; /* Make the form an inline block */
+  border: 1px solid goldenrod;
+  border-radius: 10px;
+  padding: 20px; /* Add padding to create space between the border and the inside elements */
+  text-align: center; /* Center the form elements horizontally */
+}
+
+.edit-form-container input {
+  margin-bottom: 10px;
+font-size: 11pt;
+padding: 5px 5px 5px;
+border: 1px solid #cecece;
+background-color: #efefef;
+color: #787575;
+border-radius: 5px;
+width: 60%;
+outline: none;
+}
+
+.edit-page-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 40px 0  20px 0;
+}
+.edit-redirect {
+  margin: 20px;
+  text-align: center;
+}
+
+#edit-submit-btn {
+  width: 100%;
+  color: #181717;
+  background-color: goldenrod;
+  border-radius: 50px;
+  
+}

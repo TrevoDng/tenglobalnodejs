@@ -1,0 +1,245 @@
+
+
+.main_service_container {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  --d: none;
+  color: lightBlue;
+  font-size: 12px;
+  /*
+  background: linear-gradient(rgb(10, 24, 24),rgb(5, 34, 57));
+  */
+}
+
+.input-container {
+  position: relative;
+  display: block;
+}
+
+#countries-list-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+  /* Add these styles to fix alignment */
+  transform: translateX(0);
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 300px;
+  text-align: left;
+  overflow: auto;
+
+}
+
+#country-input:focus + #countries-list-container {
+display: block;
+}
+
+
+#countries-list-container li {
+padding: 10px;
+border-bottom: 1px solid gray;
+list-style: none;
+cursor: pointer;
+}
+
+#countries-list-container li:last-child {
+border-bottom: none;
+}
+
+#countries-list-container li:hover {
+background-color: #444;
+color: #fff;
+}
+
+.service-heading {
+  /* background-color: rgb(179, 217, 241); */
+    margin: 0px;
+    padding: 20px 0 0 0;
+    text-align: center;
+    font-size: 22px;
+ }
+.service-heading span {
+   margin: 0px;
+   color: white;
+   background-color: rgb(4, 53, 95);
+   padding: 15px;
+   border: none;
+   text-decoration: underline;
+   border-radius: 40px 0 40px 0;
+ }
+
+ .useraccount_container {
+  display: inline-block;/*
+  align-items: center;
+  justify-content: center;
+  text-align: left;*/
+  }
+  
+  .useraccount_container p {
+  /* margin: 0; */
+  padding: 0;
+  }
+  
+  #main_service_feature1 #main_service_feature2 #main_service_feature3 #main_service_feature4 #main_service_feature5:hover {
+    background-color: #43a09d;
+  } 
+  
+  .main_service_feature {
+    display: block;
+  }
+  
+  .goback_div {
+    display: block;
+    align-items: left;
+  }
+  
+  .goback {
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    /*height: 50px;*/
+    color: #05869d;
+    margin: 0 0 20px 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 1px 1px #888888;
+  }
+  
+  .pTag_loading_icon_holder {
+    color: #888888;
+    font-size: 20px;
+  }
+  
+  .service-table {
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .service-table-body tr, td {
+    border: none;
+  }
+  .service-table-body td {
+    text-align: left;
+  }
+  
+  .service-heading {
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 50px;
+  }
+  
+  .hover {
+    background-color: rgba(148, 234, 255, 0.459); /* Add this line */
+    user-select: none;
+    /* Other hover styles here */
+  }
+
+  #main_service_feature1,
+#main_service_feature2,
+#main_service_feature3,
+#main_service_feature4,
+#main_service_feature5,
+#main_service_feature6 {
+width: 32%;
+display: inline-block;
+font-size: 1rem;
+box-shadow: 0px 1px 1px 1px #888888;
+padding: 10px;
+border: none;
+border-radius: 5px;
+margin: 5px;
+}
+
+.service-title {
+margin: 0;
+font-size: 1.5vw;
+color: #000;
+}
+
+.pTag-icon-holder {
+margin: 0;
+font-size: 1.8vw;
+color: #000;
+}
+
+.text-node {
+  /*margin: 0;'/'
+/* font-size: 1.5vw; */
+color: #000;
+}
+
+.error-proof {
+  display: none;
+  text-align: center;
+  color: red;
+}
+
+@media screen and (max-width: 480px) {
+  
+  .service-heading h1 {
+      font-size: 2rem;
+      margin: 0 0 8px 0;
+  }
+  
+  .service-section {
+      padding: 25px 0 15px 0;
+  } 
+  
+  .main_service_feature img {
+      width: 15%;
+      min-width: 60px;
+      margin-right: 20px;
+  }
+
+  .service-title {
+    margin: 0;
+    font-size: 3.1vw;
+    color: #01314d;
+  }
+
+  .pTag-icon-holder {
+    margin: 0;
+    font-size: 3.8vw;
+    color: #4b4b4b;
+    }
+}
+  
+  @media screen and (max-width: 600px) {
+    .main-service-section {
+    display: block;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    #main_service_feature1,
+#main_service_feature2,
+#main_service_feature3,
+#main_service_feature4,
+#main_service_feature5,
+#main_service_feature6 {
+width: 12%;
+}
+    .service-title {
+      margin: 0;
+      font-size: 1.1vw;
+      color: #01314d;
+    }
+  
+    
+    .pTag-icon-holder {
+    margin: 0;
+    font-size: 1.8vw;
+    color: #4b4b4b;
+    }
+    
+    .text-node {
+      /*margin: 0;'/'
+    /* font-size: 1.5vw; */
+    color: #000;
+    }
+  }

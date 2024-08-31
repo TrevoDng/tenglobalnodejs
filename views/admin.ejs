@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin page</title>
+
+    <link rel="stylesheet" href="/admin/stylesheets/adminHome.css">
+    <link rel="stylesheet" href="/admin/stylesheets/adminUsers.css">
+    <link rel="stylesheet" href="/admin/stylesheets/transactionUpdate.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="/admin/javascripts/showServicePages.js" type="module" async></script>
+    <script src="/admin/javascripts/adminUser.js" type="module" async></script>
+    <script src="/admin/javascripts/adminProof.js" type="module" async></script>
+    <script src="/admin/javascripts/servicePages.js" type="module" async></script>
+    <script src="/admin/javascripts/adminUserData.js" type="module" async></script>
+    <script src="/admin/javascripts/adminGetProof.js" type="module" async></script>
+    <script src="/admin/javascripts/createUserList.js" type="module" async></script>
+    <script src="/admin/javascripts/createProofList.js" type="module" async></script>
+    <script src="/admin/javascripts/showUserById.js" type="module" async></script>
+    <script src="/admin/javascripts/generateTableRows.js" type="module" async></script>
+    <script src="/admin/javascripts/userOnclickListener.js" type="module" async></script>
+    <script src="/admin/javascripts/proofOnClickListener.js" type="module" async></script>
+    <script src="/admin/javascripts/showProofById.js" type="module" async></script>
+
+    <script src="/admin/javascripts/adminUserAPI.js" type="module" async></script>
+    <script src="/admin/javascripts/updateTransactions.js" type="module" async></script>
+
+  </head>
+  <body>
+    <h1>Administrator page</h1>
+    <h2>Services and settings</h2>
+
+    <div class="centered-services" 
+    data-page-id="main">
+      <section class="service-items-container main-service-section" id="main-service-section">
+      </section>
+    </div>
+
+    <!--clients page-->
+    <section class="admin-service-section" data-page-id="clients">
+      <button class="goback" 
+        data-target="main">Go back</button>
+      <h3 class="service-heading" style="margin: 50px;"><span>Clients List</span></h3>
+      <ol id="ol-element"></ol>
+    </section>
+
+    <!--transaction page-->
+    <section class="admin-service-section" data-page-id="transactions">
+      <button class="goback" 
+        data-target="main">Go back</button>
+      <h3 class="service-heading" style="margin: 50px;"><span>Transactions List</span></h3>
+      <ol id="transaction-element"></ol>
+    </section>
+
+    <!--user page-->
+    <section class="admin-service-section" data-page-id="userpage">
+      <div class="useraccount_container">
+        <div class="goback-div">
+        <button class="goback" 
+        data-target="clients">Go back</button></div>
+        <h3 class="service-heading" style="margin: 50px;"><span>Profile Details</span></h3>
+        
+        <table
+          class="service-table" id="profile-table" style="width: auto;">
+          <tbody class="service-table-body" id="table-body-profile"></tbody>
+        </table>
+        <div id="profile-container">
+          <a class="nav-link" href="#editprofile">Edit profile details</a>
+        </div>
+      </div>
+    </section>
+
+    <!--user page-->
+    <section class="admin-service-section" data-page-id="proofpage">
+      <div class="useraccount_container">
+        <div class="goback-div">
+        <button class="goback" 
+        data-target="transactions">Go back</button></div>
+        <h3 class="service-heading" style="margin: 50px;"><span>Proof Details</span></h3>
+        
+        <table
+          class="service-table" id="profile-table" style="width: auto;">
+          <tbody class="service-table-body" id="table-body-proof"></tbody>
+        </table>
+
+        <h3>Update transaction details</h3>
+    <div class="wrapper">
+      <form class="update-form" id="update-transaction-form">
+        <br />
+        <label for="update-status">Status</label><br />
+        <input type="text" id="update-status" type="text" placeholder="Update Status" required />
+        <br />
+        <br />
+        <label for="update-message">Message</label><br />
+        <textarea type="text" id="update-message" placeholder="Update Message" required ></textarea>
+        <br />
+        <br />
+        <button type="submit" value="Submit">
+          <span class="state">Submit</span>
+        </button><br />
+      </form>
+    <br />
+    <br />
+    <p id="update-error"></p>
+  </div>
+      </div>
+    </section>
+
+    <script>
+
+    </script>
+</body>
+</html>

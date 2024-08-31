@@ -1,0 +1,416 @@
+@font-face {
+  font-family: 'LOXO';
+  src: url('loxo-cufonfonts/LOXO.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Forzan-Light';
+  src: url('loxo-cufonfonts/Forzan-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'GltpStarionRegular-rvv7p';
+  src: url('loxo-cufonfonts/GltpStarionRegular-rvv7p.otf') format('truetype');
+}
+
+
+
+/*send proof form css*/
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Forzan-Light', sans-serif;
+  /*font-family: "Open Sans", cursive;*/
+  font-size: 13pt;
+  background-color: #efefef;
+  padding: 10px;
+  margin: 0;
+}
+
+.company-name {
+  font-family: 'LOXO', sans-serif;
+}
+
+h1 {
+  font-size: 15pt;
+  color: #20bcd5;
+  text-align: center;
+  padding: 18px 0 18px 0;
+  margin: 0 0 10px 0;
+}
+h1 span {
+  border: 4px dashed #20bcd5;
+  padding: 10px;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+.img-circle {
+  border: 3px solid white;
+  border-radius: 50%;
+}
+
+#header {
+  background-image: url("https://www.sololearn.com/Uploads/header.jpg");
+  background-size: cover;
+}
+#header img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+#header p {
+  font-size: 25pt;
+  color: #3b464c;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.quote {
+  font-size: 12pt;
+  text-align: right;
+  margin-top: 10px;
+}
+table {
+  width: 100%;
+  font-size: 11pt;
+}
+table, th, td {
+  border: 2px solid #cecece;
+  border-collapse: collapse;
+  text-align: center;
+  table-layout: fixed;
+}
+.selected {
+  background-color: #f36f48;
+  font-weight: bold;
+  color: white;
+}
+li {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+progress {
+  width: 70%;
+  height: 20px;
+  color: #3fb6b2;
+  background: #efefef;
+}
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
+progress::-webkit-progress-value {
+  background: #3fb6b2;
+} 
+progress::-moz-progress-bar {
+  color: #3fb6b2;
+  background: #efefef;
+}
+iframe, audio {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid #3fb6b2;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background: #f36f48;
+}
+
+form {
+  text-align: center;
+  margin-top: 0;
+}
+.submit {
+  background-color: #3fb6b2;
+  padding: 12px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  margin: 0;
+  font-weight: bold;
+}
+.submit:hover {
+  background-color: #43a09d;
+}
+textarea {
+  height: 100px;
+}
+
+
+.face {
+  transform: scale(0.4);
+  margin: 0 auto;
+  display: block;
+  margin-top: -35px;
+  margin-bottom: -25px;
+}
+#contacts img {
+  height: 50px;
+  width: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
+#contacts a {
+  text-decoration: none;
+}
+#contacts img:hover {
+  opacity: 0.8;
+}
+#contacts {
+  text-align: center;
+}
+.copyright {
+  font-size: 8pt;
+  text-align: right;
+  padding-bottom: 10px;
+  color: grey;
+}
+     
+/*end of send proof css*/
+.notification-title {
+  font-size: 13px;
+  color: rgb(255, 0, 0);
+  position: absolute;
+  top: 20px;
+
+}
+
+:root {
+  --color1: #549DA0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+  line-height: 1.45;
+  background:linear-gradient(rgb(10, 24, 24),rgb(5, 34, 57));
+}
+
+
+@keyframes wave {
+from {
+  height: 0;
+}
+to {
+  height: 100px;  
+}
+}
+
+section {
+  /*text-align: center;*/
+  padding: 40px 0;
+  /*
+  background: linear-gradient(rgb(10, 24, 24),rgb(5, 34, 57));
+  */
+}
+
+
+
+.quote {
+ /* background: var(--color1); *//*
+ background: linear-gradient(rgb(10, 24, 24),rgb(5, 34, 57));
+  color:#FFF;*/
+}
+blockquote {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+blockquote p {
+  margin: 0 0 5px 0;
+  font-size: 1.5rem;
+}
+blockquote cite {
+  font-size: 1rem;
+  font-style: italic;
+}  
+blockquote cite:before {
+  content: '–';
+  margin-right: 5px;
+}
+footer {
+  background: #000;
+  padding: 32px 0;
+  text-align: center;
+  color: #868686;
+  font-size: 0.75rem;
+}
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer li {
+  display: inline-block;
+}
+footer li a {
+  padding: 6px;
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #c3c3c3;
+}
+footer li a:hover {
+  color: white;
+}
+
+/*website structure*/
+.item1{
+grid-area: header;
+background-color: lightblue;
+}
+.item2{grid-area: menu;
+      /*transition: all 0.5s ease-in-out;
+      transform: 0.5s ease-in-out;
+      display: none;
+      transform: scale(0);
+width: 300px;*/
+background-color: brown;
+}
+/*
+.item2.active {
+  display: block;
+  transform: scale(1);
+}
+*/
+.side-menu-btn {
+  transition: all 0.5s ease-in-out;
+}
+.item2 ul {
+list-style: none;
+text-align: left;
+}
+.item3{
+      grid-area: main;
+      /*flex-direction: column;
+      text-align: center;*/
+      /*align-items: center;
+      justify-content: center;*/
+      background-color: white;
+}
+
+.item4{
+grid-area: right;
+background-color: white;
+visibility: visible;
+}
+.item5{grid-area: footer;
+display: none;
+position: absolute;
+bottom: 0px;
+left: 0px;
+right: 0px;
+color: white;
+background-color: black;
+}
+
+.grid-container {
+display: grid;
+grid-template-areas:
+'header header header header header header'
+'menu main main main main right'
+'footer footer footer footer footer footer';
+gap: 0px;
+background-color: whitesmoke;
+padding: 0px;
+}
+.grid-container > div {
+text-align: center;
+}
+
+.about-system-usage {
+  text-align: left;
+  font-size: 0.8rem;
+  color: darkolivegreen;
+  margin: 0px;
+}
+
+.about-system-usage li {
+  text-align: left;
+  font-size: 0.8rem;
+  color: darkolivegreen;
+  margin: 0px;
+}
+
+@media screen and (max-width: 480px) {
+  .btn {
+      display: block;
+      font-size: 1.125rem;
+  }
+ 
+  h2, blockquote p {
+      font-size: 1.125rem;
+  }
+
+  .quote {
+      padding: 30px 0;
+  }
+  blockquote cite {
+      font-size: 0.875rem;
+  }
+  footer {
+      padding: 30px 0 10px 0;
+      /*background-color:#063970;*/
+  }
+  footer li {
+      display: block;
+      margin: 5px 0;
+  }
+  .submenu {
+      width: 100%;
+      position: relative;
+  }
+  
+  .item2 {
+      display: none;
+      font-size: 3vw;
+  }
+  .item4{
+display: none;
+}
+
+.notification-title {
+position: absolute;
+  top: 70px;
+
+}
+}
+  
+  @media screen and (max-width: 600px) {
+  .item2 {
+        display: none;
+        font-size: 2vw;
+    }
+    .item4{
+  display: none;
+  }
+
+  .notification-title {
+    position: absolute;
+      top: 70px;
+    
+    }
+
+  }
+  
+  @media screen and (min-width: 600px) {
+    .item3{
+      grid-area: main;
+      /*height: 800px;*/
+      background-color: white;
+      padding: 5px;
+}
+    .sidenavbar-list ul li a{
+      font-size: 0.8em;
+      
+      }
+  }

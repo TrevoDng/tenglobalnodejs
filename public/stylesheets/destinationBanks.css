@@ -1,0 +1,44 @@
+.input-container {
+  position: relative;
+  display: block;
+}
+
+#banks-list-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+  z-index: 1;
+  /* Add these styles to fix alignment */
+  transform: translateX(0);
+  margin-left: 0;
+  padding-left: 0;
+  max-height: 300px;
+  text-align: left;
+  overflow: auto;
+
+}
+
+#destinatin:focus + #banks-list-container {
+display: block;
+}
+
+
+#banks-list-container li {
+padding: 10px;
+border-bottom: 1px solid gray;
+list-style: none;
+cursor: pointer;
+}
+
+#banks-list-container li:last-child {
+border-bottom: none;
+}
+
+#banks-list-container li:hover {
+background-color: #444;
+color: #fff;
+}

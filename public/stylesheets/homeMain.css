@@ -1,0 +1,19 @@
+.body {
+    
+}
+
+.main-home-container {
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgba(0, 0, 0, 0);
+    padding: 10px;
+}
+
+.main-home-top-container {
+    background-image: linear-gradient(rgb(0, 20, 34), rgba(1, 20, 26, 0.144)), url('/public/images/logo/ten_global_logo.jpeg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.815);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    width: auto;
+}
