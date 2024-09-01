@@ -107,7 +107,7 @@ exports.signup = async (req, res, next) => {
                     ])
                     .catch((error) => {
                         console.log("User not created!", error)
-                        //return res.status(400).json({userError: "User not created!"})
+                        //return res.status(400).json({registerError: "User not created!"})
                     });
 
                     const user_id = (await usersResults).rows[0].id;
@@ -116,7 +116,7 @@ exports.signup = async (req, res, next) => {
                     const userRolesResults = pool.query(rolesStatement, [user_id, role_id])
                     .catch((error) => {
                         console.log("User not saved to user_roles!", error)
-                        //return res.status(400).json({userRoleError: "User not saved to user_roles!"})
+                        //return res.status(400).json({registerError: "User not saved to user_roles!"})
                     });
 
                     console.log((await userRolesResults).rows);
@@ -124,7 +124,7 @@ exports.signup = async (req, res, next) => {
                     const roleResults = pool.query('SELECT name FROM roles WHERE id = $1', [role_id])
                     .catch((error) => {
                         console.log("failed to get data from roles!", error)
-                        //return res.status(400).json({userRoleError: "roles failed!"})
+                        return res.status(400).json({registerError: "roles failed!"})
                     });
                     const role = (await roleResults).rows[0].name;
 
@@ -151,7 +151,7 @@ exports.signup = async (req, res, next) => {
                     console.log("User not created", error);
                     return res.status(400).json({
                         registerMessage: "User not created",
-                        RegisterError: error.message,
+                        registerError: error.message,
                     });
                 }
                        // res.status(201).send(`User added with ID: ${results.rows[0].id}`) 
